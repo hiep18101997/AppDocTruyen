@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+<TableRow
+    android:layout_width="match_parent"
+    android:background="@color/colorTitle"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="80dp"
+        android:src="@drawable/icon_smiles"
+        android:layout_height="56dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:text="@string/title"
+        android:textSize="35sp"
+        android:id="@+id/tv_titlestory"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_height="56dp" />
+</TableRow>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_story"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
